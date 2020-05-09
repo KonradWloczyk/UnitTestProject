@@ -1,14 +1,12 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO.IOException;
 
 namespace UnitTestProject
 {
-
     [TestClass]
     public class LeapYear
     {
-        
+
         [TestMethod]
         public void Leap_Year_Test_2018()
         {
@@ -63,12 +61,12 @@ namespace UnitTestProject
             Console.WriteLine(sHun);
             Console.WriteLine(sFhun);
 
-            if ((nEven == 0) && (nFour == 0 ) && (nHun == 0) && (nFhun ==0))
+            if ((nEven == 0) && (nFour == 0) && (nHun == 0) && (nFhun == 0))
             {
                 Console.WriteLine("Leap Year: Yes");
                 return "Yes";
             }
-            else if ((nEven == 0) && (nFour == 0) && (nHun != 0) && (nFhun !=0))
+            else if ((nEven == 0) && (nFour == 0) && (nHun != 0) && (nFhun != 0))
             {
                 Console.WriteLine("Leap Year: Yes");
                 return "Yes";
@@ -87,7 +85,5 @@ namespace UnitTestProject
             }
             return "No";
         }
-        
-
     }
 }
